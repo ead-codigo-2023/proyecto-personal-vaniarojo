@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web con Vistas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Contenido Fijo de cada Página -->
+        <!-- El header y la sidebar estarán fijas a lo largo de la navegación de la página, ademas de la descripcion del tipo de ilustración -->
+        <div class="header">
+            <div class="logo"></div>
+            <h1>Brisa ilustraciones</h1>
+        </div>
+
+        <div class="sidebar">
+            <button onclick="mostrarVista('vista-inicio')">Inicio</button>
+            <h2>Ilustraciones</h2>
+            <button onclick="mostrarVista('vista-simples')">Ilustraciones Simples</button>
+            <button onclick="mostrarVista('vista-personalizados')">Ilustraciones Personalizadas</button>
+            <button onclick="mostrarVista('vista-deautor')">Ilustraciones de Autor</button>
+            <button onclick="mostrarVista('vista-mascotas')">Ilustraciones de Mascotas</button>
+        </div>
+
+        <div class="content">
+            <!-- Vista Inicio -->
+            <div class="vista vista-inicio active">
+                <h3 class="h3-main">Bienvenido a nuestra página, descubre una variedad</h3>
+                <h3>de ilustraciones</h3>
+                <p>Estamos encantados de tenerte aquí, explorando nuestro rincón creativo. En Brisa Ilustraciones</p>
+                <p>nos dedicamos a dar vida a las ideas a través de ilustraciones únicas y cautivadoras.</p>
+                <p>¿Buscas una pieza única para tu espacio? ¿Un regalo que hable por sí mismo? Estás en el lugar adecuado.</p>
+                <p>Nuestra galería está llena de sorpresas que esperan ser descubiertas.</p>
+            
+                <!-- Imágenes en la vista Inicio -->
+                <div class="imagenes-container">
+                    <div class="imagen-central">
+                        <img src="Imagenes/WhatsApp Image 2023-11-10 at 17.09.58.jpeg" alt="Ilustracion Portada">
+                        <h4>Ilustracion de Portada</h4>
+                    </div>
+                </div>
+                <div class="imagen-derecha">
+                    <img src="Imagenes/WhatsApp Image 2023-11-10 at 17.07.52.jpeg" alt="Ilustracion Autor">
+                    <h4>Ilustracion de Autor</h4>
+                    <h5>¡Hola y bienvenidos! Soy Vania Rojo, la mente</h5>
+                    <h5>creativa detrás de las ilustraciones que encontrarás aquí.</h5>
+                    <h5>¡Gracias por acompañarme en esta travesía artística!</h5>
+                    <h5>¡Espero que disfrutes explorando tanto como yo disfruto creando!</h5>
+                </div>
+            </div>
+
+            <!-- Vista Simples -->
+            <div class="vista vista-simples">
+                <h2 class="descripciones-main">Ilustraciones Simples</h2>
+                <h3 class="descripciones">
+                    Las llamamos "simples" ya que únicamente delineamos la fotografía que nos das a disposición y le agregamos nuevos elementos como puede ser el fondo personalizado. Además estas no cuentan con detalles faciales.
+                </h3>
+                <div class="imagenes-vistas">
+                    <img src="Imagenes/simples/Simple1.jpeg" alt="Imagen 1">
+                    <img src="Imagenes/simples/Simple2.jpeg" alt="Imagen 2">
+                </div>
+                <div class="imagenes-vistas2">
+                    <img src="Imagenes/simples/Simple3.jpeg" alt="Imagen 3">
+                    <img src="Imagenes/simples/Simple4.jpeg" alt="Imagen 4">
+                </div>
+                <div class="imagenes-vistas3">
+                    <img src="Imagenes/simples/Simple5.jpeg" alt="Imagen 5">
+                    <img src="Imagenes/simples/Simple6.jpeg" alt="Imagen 6">
+                </div>
+            </div>
+            <!-- Vista Personalizados -->
+            <div class="vista vista-personalizados">
+                <h2 class="descripciones-main">Ilustraciones Personalizadas</h2>
+                <h3 class="descripciones">
+                    Retratos totalmente diseñado por la autora teniendo en consideración los detalles entregados por ustedes, ya sea número de personas, posiciones, vestimenta, expresiones, elementos, fondo, etc.
+                </h3>
+                <div class="imagenes-personalizadas">
+                    <img src="Imagenes/Personalizadas/Perso1.jpeg" alt="Imagen 1">
+                    <img src="Imagenes/Personalizadas/Perso2.jpeg" alt="Imagen 2">
+                </div>
+                <div class="imagenes-personalizadas2">
+                    <img src="Imagenes/Personalizadas/Perso3.jpeg" alt="Imagen 3">
+                    <img src="Imagenes/Personalizadas/Perso4.jpeg" alt="Imagen 4">
+                </div>
+                <div class="imagenes-personalizadas3">
+                    <img src="Imagenes/Personalizadas/Perso5.jpeg" alt="Imagen 5">
+                    <img src="Imagenes/Personalizadas/Perso6.jpeg" alt="Imagen 6">
+                </div>
+                <div class="imagenes-personalizadas4">
+                    <img src="Imagenes/Personalizadas/Perso7.jpeg" alt="Imagen 7">
+                    <img src="Imagenes/Personalizadas/Perso8.jpeg" alt="Imagen 8">
+                </div>
+                <div class="imagenes-personalizadas5">
+                    <img src="Imagenes/Personalizadas/Perso9.jpeg" alt="Imagen 9">
+                    <img src="Imagenes/Personalizadas/Perso10.jpeg" alt="Imagen 10">
+                </div>
+            </div>
+            <!-- Vista De Autor -->
+            <div class="vista vista-deautor">
+                <h2 class="descripciones-main">Ilustraciones de Autor</h2>
+                <h3 class="descripciones">
+                    Dibujos personales de autora, sin posibilidad de cambios de ningún tipo.
+                </h3>
+                <div class="imagenes-deAutor">
+                    <img src="Imagenes/deAutor/Autor1.jpeg" alt="Imagen 1">
+                    <img src="Imagenes/deAutor/Autor2.jpeg" alt="Imagen 2">
+                </div>
+                <div class="imagenes-deAutor2">
+                    <img src="Imagenes/deAutor/Autor3.jpeg" alt="Imagen 3">
+                    <img src="Imagenes/deAutor/Autor4.jpeg" alt="Imagen 4">
+                </div>
+            </div>
+            <!-- Vista de Mascotas -->
+            <div class="vista vista-mascotas">
+                <h2 class="descripciones-main">Ilustraciones de Mascotas</h2>
+                <h3 class="descripciones">
+                    Dibujos personalizados de tus mascotas a partir de fotos de referencia y peticiones de ustedes.
+                </h3>
+                <div class="imagenes-mascotas">
+                    <img src="Imagenes/Mascotas/Mascotas1.jpeg" alt="Imagen 1">
+                    <img src="Imagenes/Mascotas/Mascotas2.jpeg" alt="Imagen 2">
+                </div>
+                <div class="imagenes-mascotas2">
+                    <img src="Imagenes/Mascotas/Mascotas3.jpeg" alt="Imagen 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

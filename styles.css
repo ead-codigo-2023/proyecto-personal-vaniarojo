@@ -1,0 +1,291 @@
+/* Estilos */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d8e0ff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c8d0f3;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2;
+}
+.header h1 {
+    margin: 0;
+}
+
+.h3-main {
+    margin-top: 110px;
+}
+.vista-inicio h3 {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 200px;
+}
+.vista-inicio p {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20px; 
+    text-align: center;
+    margin-top: -10px;
+}
+
+/* Barra lateral */
+
+.sidebar {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 450px; 
+    z-index: 2;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #d8e0ff;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar button:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar button:hover {
+    background-color: #a8b8f8;
+}
+
+
+.sidebar p {
+    display: none;
+}
+
+
+.sidebar.inicio p.inicio,
+.sidebar.simples p.simples,
+.sidebar.personalizados p.personalizados,
+.sidebar.deautor p.deautor,
+.sidebar.mascotas p.mascotas {
+    display: block;
+}
+
+/*-----------------*/
+
+.content {
+    flex: 1;
+    padding: 20px; 
+}
+
+.inicio {
+    display: block;
+}
+
+/* Ilustraciones de Inicio */
+
+.imagenes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+
+.imagen-central img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.imagen-derecha {
+    align-self: flex-end;
+    text-align: right; 
+    margin-top: -750px; 
+    margin-right: 100px;
+
+}
+
+.imagen-derecha h4 {
+    text-align: right;
+    margin-right: 100px;
+}
+
+.imagen-derecha h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-left: 1400px;
+}
+
+.imagen-derecha img {
+    width: 20%;
+    margin-right: 100;
+}
+
+.imagen-central {
+    margin-bottom: 0;
+}
+
+.imagen-central {
+    text-align: center;
+    margin-right: 1000; 
+}
+
+.texto-bajoImagen {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*------------------------*/
+
+.vista {
+    display: none;
+}
+
+.vista.active {
+    display: block;
+}
+
+.vista-inicio {
+    margin-top: -40px;
+}
+
+.vista-inicio h3 {
+    font-size: 40px;
+    margin-left: 200px;
+}
+
+.vista-inicio p {
+    text-align: center;
+    margin-right: 150px;
+}
+
+/* Estilos de Ilustraciones*/
+
+.descripciones-main{
+    position: fixed;
+    margin-top: 75px;
+}
+
+.descripciones {
+    position: fixed;
+    max-width: 300px;
+    margin-top: 125px;
+}
+
+.imagenes-vistas,
+.imagenes-vistas2,
+.imagenes-vistas3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+
+.imagenes-vistas img,
+.imagenes-vistas2 img,
+.imagenes-vistas3 img {
+    width: 35%;
+    height: auto;
+    object-fit: contain;
+    margin: 10px;
+    margin: 100px;
+}
+
+.imagenes-personalizadas,
+.imagenes-personalizadas2,
+.imagenes-personalizadas3,
+.imagenes-personalizadas4,
+.imagenes-personalizadas5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+
+.imagenes-personalizadas img,
+.imagenes-personalizadas2 img,
+.imagenes-personalizadas3 img,
+.imagenes-personalizadas4 img,
+.imagenes-personalizadas5 img {
+    width: 35%;
+    height: auto;
+    object-fit: contain;
+    margin: 10px;
+    margin: 100px;
+}
+
+.imagenes-deAutor,
+.imagenes-deAutor2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+
+.imagenes-deAutor img,
+.imagenes-deAutor2 img{
+    width: 35%;
+    height: auto;
+    object-fit: contain;
+    margin: 10px;
+    margin: 100px; 
+}
+
+.imagenes-mascotas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+
+.imagenes-mascotas img {
+    width: 35%;
+    height: auto;
+    object-fit: contain;
+    margin: 10px;
+    margin: 100px;
+}
+
+.imagenes-mascotas2 {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.imagenes-mascotas2 img {
+    width: 35%;
+    height: auto;
+    object-fit: contain;
+    margin: 10px;
+    margin: 100px;
+}
